@@ -2,7 +2,7 @@
 cask "sketch" do
   desc "Sketch is an agentic coding tool. It draws the 🦉"
   homepage "https://sketch.dev"
-  version "0.0.21"
+  version "0.0.22"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,39 +12,39 @@ cask "sketch" do
 
   on_macos do
     on_intel do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.21/sketch_0.0.21_darwin_amd64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.22/sketch_0.0.22_darwin_amd64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "38fa32c082c46eada7b96723cb15776b574673fd80fe22d4222871ac729cf596"
+      sha256 "027e1378bb8d7a36ee67fb50c086560d9a93f0bc9fd62725f80fb000d2dc9dc4"
     end
     on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.21/sketch_0.0.21_darwin_arm64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.22/sketch_0.0.22_darwin_arm64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "e8bfa0493a16eac5526227e79b54dd7f1a59f5385b3ab1068a8e9b6e7658afb2"
+      sha256 "8b94e7ebf4ea62fa23a3ea710c6be4475151a767f165ec828a0a5fdfc8730fa0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.21/sketch_0.0.21_linux_amd64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.22/sketch_0.0.22_linux_amd64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "14b174b183678bd76522f0245fedcf6c4a59ea5f8e848f0ad15c2af2b5e71a0f"
+      sha256 "f425ed33a8dd9df6d7613a8a4f7b1f0072517f523de7ceecead8325ca5da6b85"
     end
     on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.21/sketch_0.0.21_linux_arm64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.22/sketch_0.0.22_linux_arm64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "729560ca83565aba755b4eb7b26dc23af9b7102d7c5bccf0c947501392ea5f09"
+      sha256 "22222212f35617e5905fe38baa5c704c8481dc30dfe36c5f3172b3507b5c0816"
     end
   end
 
