@@ -2,31 +2,16 @@
 cask "sketch" do
   desc "Sketch is an agentic coding tool. It draws the 🦉"
   homepage "https://sketch.dev"
-  version "0.0.31"
+  version "0.0.32"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "sketch"
+  url "https://github.com/boldsoftware/sketch/releases/download/v0.0.32/sketch_0.0.32_darwin_arm64.tar.gz"
+  sha256 "64318924f3baab2d1f5d7708507517b2d3302988ebd9ee7e6ed2875bf5d41699"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.31/sketch_0.0.31_darwin_arm64.tar.gz"
-      sha256 "4c3a18e1654372fb312587b1672c7577abf689e1a6a123642162f2cfeb5c6524"
-    end
-  end
-
-  on_linux do
-    on_intel do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.31/sketch_0.0.31_linux_amd64.tar.gz"
-      sha256 "3adeabe9397e515f4d54da9e1ef09f26d3599add2ce5d52dd7a3d81633e5a87d"
-    end
-    on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.31/sketch_0.0.31_linux_arm64.tar.gz"
-      sha256 "4d58491832e8e00c0dc77d6bf5a637c798c92ec6217754267e27e34a0e4b21e9"
-    end
-  end
+  binary "sketch-0.0.32-darwin-arm64/sketch"
 
   # No zap stanza required
 end
