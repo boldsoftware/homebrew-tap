@@ -2,7 +2,7 @@
 cask "sketch" do
   desc "Sketch is an agentic coding tool. It draws the 🦉"
   homepage "https://sketch.dev"
-  version "0.0.27"
+  version "0.0.28"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,40 +11,32 @@ cask "sketch" do
   binary "sketch"
 
   on_macos do
-    on_intel do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.27/sketch_0.0.27_darwin_amd64.tar.gz",
-        header: [
-          "Accept: application/octet-stream",
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-        ]
-      sha256 "62cbe0b1aeea5cbef232d4dceebb63a7bc4bc97ad9f7d774944895f0727ce51b"
-    end
     on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.27/sketch_0.0.27_darwin_arm64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.28/sketch_0.0.28_darwin_arm64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "dd59d7584de8b113f2d7acb43ece6fa0a0d4cbc3aa0a1752af5397efe4c413c4"
+      sha256 "cdd3292b5547f57a70c07741a654792de97fb65dbcdd4365900823d4aa0be5fc"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.27/sketch_0.0.27_linux_amd64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.28/sketch_0.0.28_linux_amd64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "ebc9c8832cf309ac41a7cf34c55a9f428d73ef79bebec29e733940a665d3bf42"
+      sha256 "30f88d002efdebc926529f0eb5f449ecdd6d2b441ec043843f50923d0cb4c1e8"
     end
     on_arm do
-      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.27/sketch_0.0.27_linux_arm64.tar.gz",
+      url "https://github.com/boldsoftware/sketch/releases/download/v0.0.28/sketch_0.0.28_linux_arm64.tar.gz",
         header: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "d557cc9ede6c2c9f0d74c2ce5f5adbb6e01d98d03b9ba0cd08817b01ad521388"
+      sha256 "4bf57503e73d08e693f59e495e220e1691366df7aac4c276980770af18942ba6"
     end
   end
 
