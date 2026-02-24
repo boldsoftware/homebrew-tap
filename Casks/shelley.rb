@@ -3,7 +3,7 @@ cask "shelley" do
   name "shelley"
   desc "A mobile-friendly, web-based, multi-modal coding agent"
   homepage "https://github.com/boldsoftware/shelley"
-  version "0.247.977170254"
+  version "0.248.937201523"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,12 +12,12 @@ cask "shelley" do
   on_macos do
     on_intel do
       url "https://github.com/boldsoftware/shelley/releases/download/v#{version}/shelley_darwin_amd64"
-      sha256 "10e22e233a379d279e2910fa49ace8c86df9afad4f3a68148757302f273647b0"
+      sha256 "44d4838f01eebeadcf7bf001a1be8f3bec667d0de50175816d2aae6f9842bde0"
       binary "shelley_darwin_amd64", target: "shelley"
     end
     on_arm do
       url "https://github.com/boldsoftware/shelley/releases/download/v#{version}/shelley_darwin_arm64"
-      sha256 "c04df103c202aefcea3fcae9b5f2412285363ba6c19c70d740c044c739ea4335"
+      sha256 "6cd4cbcaa9f8eed2afb2b1fec53d047283487432ba78fa02fd2e773a1609997e"
       binary "shelley_darwin_arm64", target: "shelley"
     end
   end
@@ -25,12 +25,12 @@ cask "shelley" do
   on_linux do
     on_intel do
       url "https://github.com/boldsoftware/shelley/releases/download/v#{version}/shelley_linux_amd64"
-      sha256 "c03477444f547627124be79814a2e0fae854c13b4e77478a36629fbe4687fa85"
+      sha256 "312a4b073d54d76ac3989b690d39489fa200ca0f5674cbf363e617aadd2f085f"
       binary "shelley_linux_amd64", target: "shelley"
     end
     on_arm do
       url "https://github.com/boldsoftware/shelley/releases/download/v#{version}/shelley_linux_arm64"
-      sha256 "147f5e0fb907bc3516726b5126afb50001ebb2ee7426c337cf04718d3332770c"
+      sha256 "4ddeeef10a7c0530fd7d10e8a15dd11989a7ac00203fa385aa9c164cbbd0f4f0"
       binary "shelley_linux_arm64", target: "shelley"
     end
   end
